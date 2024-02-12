@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    </head>
+    
+    <body>
+        <a-scene background="color:#328044">
+            <a-camera wasd-control-enabled="false" position="0 8 30"></a-camera>
+            <a-assets>
+                <a-assets-item id="desk" src="./Copy of Desk/tinker.obj"></a-assets-item>
+                <a-assets-item id="desk1" src="./Copy of Desk/obj.mtl"></a-assets-item>
+                <a-assets-item id="chair" src="./Copy of Desk Chair/tinker.obj"></a-assets-item>
+                <a-assets-item id="chair1" src="./Copy of Desk Chair/obj.mtl"></a-assets-item>
+                <a-assets-item id="bed" src="./Copy of Bed/tinker.obj"></a-assets-item>
+                <a-assets-item id="bed1" src="./Copy of Bed/obj.mtl"></a-assets-item>
+                <a-assets-item id="drawer" src="./bedside table/tinker.obj"></a-assets-item>
+                <a-assets-item id="drawer1" src="./bedside table/obj.mtl"></a-assets-item>
+            </a-assets>
+            <a-entity obj-model="obj: #desk; mtl: #desk1"  position="30 -20 -10" rotation="-90 0 0" scale="0.3 0.3 0.3"></a-entity>
+            <a-entity obj-model="obj: #chair; mtl: #chair1" position="35 -20 25" rotation="-90 40 0"></a-entity>
+            <a-entity obj-model="obj: #bed; mtl: #bed1" position="-20 -20 -20" rotation="-90 0 0"></a-entity>
+            <a-entity obj-model="obj: #drawer; mtl: #drawer1" position="-25.5 -20 -27" rotation="-90 0 0" scale="0.05 0.05 0.05"></a-entity>
+            <a-entity>
+                <a-box position="5 -4 -39" width="90" height="70" src="./textures/sun-and-wave-blue-aesthetic-background-scaled.jpg"></a-box>
+                <a-box position="55 -2.9 -15" rotation="0 -87 0" width="90" height="70" src="./textures/sun-and-wave-blue-aesthetic-background-scaled.jpg"></a-box>
+                <a-box position="0 -21 -5" rotation="90 0 0" width="80" height="70" src="./textures/360_F_197717166_UowHyPmYH2g6b2bH3kgXD1Mcbh1UDtLY.jpg"></a-box>
+                <!--<a-box position="0 21.4 -15" rotation="90 0 0" width="50" height="50"></a-box>-->
+            </a-entity>
+        </a-scene>
+    </body>
+</html>
